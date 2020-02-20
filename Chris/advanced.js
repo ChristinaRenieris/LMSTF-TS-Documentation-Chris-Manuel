@@ -1,36 +1,26 @@
+var cards = [];
 var People = /** @class */ (function () {
-    function People(name, age, location, hobbies, favouriteMusic) {
+    function People(img, name, age, location, hobbies, favouriteMusic) {
+        this.img = "";
         this.name = "";
         this.age = "";
         this.location = "";
         this.hobbies = "";
         this.favouriteMusic = "";
+        this.img = img;
         this.name = name;
         this.age = age;
         this.location = location;
         this.hobbies = hobbies;
         this.favouriteMusic = favouriteMusic;
+        cards.push("<div class=\"col-lg-2\">\n        <div class=\"card\">\n            <img class=\"card-img-top\" src=\"" + this.image + "\" alt=\"Card image cap\">\n            <div class=\"card-body\">\n                <h4 class=\"card-title\">" + this.name + "</h4>\n                <p class=\"card-text\">\n                " + this.age + "<br>\n                " + this.location + "<br>\n                " + this.hobbies + "<br>\n                " + this.favouriteMusic + "<br>\n                </p>\n                <a href=\"#!\" class=\"btn btn-primary\">Go somewhere</a>\n            </div>\n        </div>\n    </div>");
     }
-    People.prototype.person = function () {
-        return "\n       <li>Name : " + this.name + "</li>\n       <li>Age : " + this.age + "</li>\n       <li>Location : " + this.location + "</li>\n       <li>Hobbies : " + this.hobbies + "</li>\n       <li>Favourite Music : " + this.favouriteMusic + "</li>\n    ";
-    };
     return People;
 }());
-//BOBBY
-var Bobby = new People("Bobby", "30", "Vienna", "Beer, Wine, Whiskey", "HipHop");
-document.getElementById(" INSERT BOBBY ID HERE").innerHTML = (Bobby.person());
-//JESSICA
-var Jessica = new People("Jessica", "28", "Hamburg", "Jogging, My Cat Tommy", "DeathMetal");
-document.getElementById(" INSERT JESSICA ID HERE").innerHTML = (Jessica.person());
-//MICHI
-var Michi = new People("Michi", "28", "Vienna", "Avoiding Dating Apps, Contradicting myself", "Whale Sounds, 10hours of Silence on YouTube");
-document.getElementById(" INSERT MICHI ID HERE").innerHTML = (Michi.person());
-//MARIA
-var Maria = new People("Maria", "25", "Bratislava", "Travel, Reading , Blogging", "Classical");
-document.getElementById(" INSERT MARIA ID HERE").innerHTML = (Maria.person());
-//LISA
-var Lisa = new People("Lisa", "33", "Vienna", "Cats, Cats AND CATS", "A bit of everything");
-document.getElementById(" INSERT LISA ID HERE").innerHTML = (Lisa.person());
-//ALDO
-var Aldo = new People("Aldo", "25", "Berlin", "Karate, Playing Drums, ", "Rock, PunkRock, MetalCore");
-document.getElementById(" INSERT ALDO ID HERE").innerHTML = (Aldo.person());
+var Bobby = new People("img/Bobby.jpg", "Bobby", "30", "Vienna", "Beer, Wine, Whiskey", "HipHop");
+var Jessica = new People("img/Jessica.jpg", "Jessica", "28", "Hamburg", "Jogging, My Cat Tommy", "DeathMetal");
+var Michi = new People("img/Michi.jpg", "Michi", "28", "Vienna", "Avoiding Dating Apps, Contradicting myself", "Whale Sounds, 10hours of Silence on YouTube");
+var Maria = new People("img/Maria.jpg", "Maria", "25", "Bratislava", "Travel, Reading , Blogging", "Classical");
+var Lisa = new People("img/Lisa.jpg", "Lisa", "33", "Vienna", "Cats, Cats AND CATS", "A bit of everything");
+var Aldo = new People("img/Aldo.jpeg", "Aldo", "25", "Berlin", "Karate, Playing Drums, ", "Rock, PunkRock, MetalCore");
+console.table(cards);
