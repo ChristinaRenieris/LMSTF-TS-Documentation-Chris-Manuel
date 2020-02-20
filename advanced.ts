@@ -23,7 +23,7 @@ class People {
 
     person() {
         for (let i of cards) {
-            var human = `<div class="col-lg-2">
+            var human = `<div class="col-lg-4">
         <div class="card">
             <img class="card-img-top" src="${this.img}" alt="Card image cap">
             <div class="card-body">

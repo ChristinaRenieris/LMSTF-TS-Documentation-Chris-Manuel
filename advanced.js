@@ -21,7 +21,7 @@ var People = /** @class */ (function () {
     People.prototype.person = function () {
         for (var _i = 0, cards_1 = cards; _i < cards_1.length; _i++) {
             var i = cards_1[_i];
-            var human = "<div class=\"col-lg-2\">\n        <div class=\"card\">\n            <img class=\"card-img-top\" src=\"" + this.img + "\" alt=\"Card image cap\">\n            <div class=\"card-body\">\n                <h4 class=\"card-title\">" + this.name + "</h4>\n                <p class=\"card-text\">\n               Age : " + this.age + "<br>\n               Location : " + this.location + "<br>\n                Hobbies : " + this.hobbies + "<br>\n                Favourite Music : " + this.favouriteMusic + "<br>\n                </p>\n                <a href=\"#!\" class=\"btn btn-primary\">Go somewhere</a>\n            </div>\n        </div>\n    </div>";
+            var human = "<div class=\"col-lg-4\">\n        <div class=\"card\">\n            <img class=\"card-img-top\" src=\"" + this.img + "\" alt=\"Card image cap\">\n            <div class=\"card-body\">\n                <h4 class=\"card-title\">" + this.name + "</h4>\n                <p class=\"card-text\">\n               Age : " + this.age + "<br>\n               Location : " + this.location + "<br>\n                Hobbies : " + this.hobbies + "<br>\n                Favourite Music : " + this.favouriteMusic + "<br>\n                </p>\n                <a href=\"#!\" class=\"btn btn-primary\">Go somewhere</a>\n            </div>\n        </div>\n    </div>";
             console.table(cards);
             //console.table(cards);
         }
